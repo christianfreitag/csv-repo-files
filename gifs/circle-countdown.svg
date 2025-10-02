@@ -1,0 +1,20 @@
+<svg width="200" height="200" viewBox="0 0 200 200">
+  <!-- Fundo do círculo -->
+  <circle class="track" cx="100" cy="100" r="90" stroke="#e0e0e0" stroke-width="12" fill="none"/>
+  
+  <!-- Contador animado -->
+  <circle class="progress" cx="100" cy="100" r="90" stroke="#4caf50" stroke-width="12" fill="none"
+          stroke-dasharray="565.48" stroke-dashoffset="0"
+          transform="rotate(-90 100 100)">
+    <animate attributeName="stroke-dashoffset"
+             from="565.48"
+             to="0"
+             dur="30s"
+             repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Texto central -->
+  <text id="counterText" x="100" y="100" text-anchor="middle" dominant-baseline="middle"
+      font-size="48" font-family="sans-serif" weight="10" fill="#333">30</text>
+
+</svg>
